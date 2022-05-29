@@ -1,0 +1,119 @@
+.platform {
+  .mainsection {
+    width: 100rem;
+    margin: auto;
+    background-image: url(/images/CurveLine.svg);
+
+    background-repeat: no-repeat;
+    .detials {
+      width: 40%;
+      .headsection {
+        margin-bottom: 2rem;
+        h1 {
+          font-size: $subheading;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          font-size: $paragraph;
+        }
+      }
+      .slip {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 1rem;
+        width: 30rem;
+
+        i {
+          font-size: 3rem;
+          color: $btn;
+          margin-right: 1rem;
+        }
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: $paragraph;
+        }
+        &:nth-child(2) {
+          background-color: $gradient1;
+        }
+        &:nth-child(3) {
+          background-color: $d3;
+        }
+        &:nth-child(4) {
+          background-color: $gradient3;
+        }
+      }
+    }
+
+    .image {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+
+      width: 50%;
+      img {
+        width: 40rem;
+      }
+      .graph {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 12rem;
+        height: 10rem;
+        background-color: white;
+        padding: 1.1rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+        border-radius: 0.7rem;
+        .graphs {
+          display: flex;
+          margin-bottom: 0.4rem;
+          align-items: flex-end;
+          .gr1 {
+            width: 0.7rem;
+            height: 2rem;
+            background-color: red;
+            &:not(:last-child) {
+              margin-right: 0.5rem;
+            }
+            &:nth-child(1) {
+              height: 1rem;
+              background-color: $d1;
+            }
+            &:nth-child(2) {
+              height: 1.5rem;
+              background-color: $d2;
+            }
+            &:nth-child(3) {
+              height: 2rem;
+              background-color: $d3;
+            }
+            &:nth-child(4) {
+              height: 1rem;
+              background-color: $d1;
+            }
+            &:nth-child(5) {
+              height: 1.5rem;
+              background-color: $d2;
+            }
+            &:nth-child(6) {
+              height: 2rem;
+              background-color: $d3;
+            }
+          }
+        }
+        p {
+          font-size: 0.7rem;
+          margin-bottom: 1rem;
+        }
+        .lik {
+          font-size: 1rem;
+          span {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

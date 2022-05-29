@@ -1,0 +1,23 @@
+// base
+@import "utlis/mixin";
+@import "components/animation";
+
+@import "utlis/variables";
+@import "base/rest";
+@import "base/typo";
+// components
+@import "components/buttons";
+@import "components/carousel";
+@import "components/dropdown";
+// layout
+@import "layout/footer";
+@import "layout/header";
+@import "layout/nav";
+// utlis
+
+@import "utlis/healper";
+@import "layout/feature";
+@import "layout/review";
+@import "layout/summary";
+@import "layout/achivements";
+@import "layout/platform";

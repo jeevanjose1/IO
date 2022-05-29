@@ -1,0 +1,157 @@
+.header {
+  background-color: $primary;
+  background-image: url(/images/CurveLine.svg);
+  background-size: cover;
+  overflow: hidden;
+  background-position: center;
+
+  .hero {
+    position: relative;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    .detials {
+      flex: 1;
+      align-self: center;
+
+      .mainheading {
+        color: $fontcolor;
+        font-size: $heading;
+        margin-bottom: 3rem;
+      }
+      .paragraph {
+        color: $fontcolor;
+        font-size: $paragraph;
+        line-height: 2;
+        font-weight: 500;
+        width: 80%;
+        margin-bottom: 4rem;
+      }
+      .youtube {
+        width: 5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      margin-bottom: 6rem;
+      @include breakpoint-up(large) {
+        margin-bottom: 0rem;
+      }
+    }
+
+    .images {
+      position: relative;
+      flex: 1;
+
+      .imageicons {
+        display: none;
+        @include breakpoint-up(large) {
+          display: block;
+          transform: scale(0.7);
+        }
+
+        @include breakpoint-up(xlarge) {
+          transform: scale(1);
+        }
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include breakpoint-up(large) {
+          top: 0;
+          left: -7rem;
+        }
+        z-index: 1;
+
+        .i1 {
+          position: absolute;
+          filter: drop-shadow(0px 10px 6px #3b222233);
+          width: 8rem;
+          transform: scale(0);
+          transition: scale 0.2s ease-in;
+
+          &:hover {
+            transform: scale(1.1);
+            filter: grayscale(0.5) drop-shadow(0px 10px 6px #3b222233);
+          }
+          &:nth-child(1) {
+            top: 50rem;
+            left: 30rem;
+          }
+          &:nth-child(2) {
+            top: 30rem;
+            left: 0rem;
+          }
+          &:nth-child(3) {
+            top: 5rem;
+            left: 10%;
+          }
+          &:nth-child(4) {
+            top: 5rem;
+            left: 60rem;
+          }
+          &:nth-child(5) {
+            top: 40rem;
+            left: 62rem;
+          }
+        }
+      }
+      .manimg {
+        max-width: 100%;
+        min-width: 30rem;
+      }
+      .quote {
+        position: absolute;
+        background-color: $d2;
+        padding: 2rem;
+        z-index: 1;
+        overflow: hidden;
+        border-radius: 3rem 3rem 3rem 3rem;
+
+        blockquote {
+          color: white;
+          font-size: $paragraph;
+          width: 22rem;
+          overflow: hidden;
+          text-align: center;
+          line-height: 1.5;
+          pointer-events: none;
+          @include breakpoint-up(large) {
+            width: 15rem;
+          }
+          @include breakpoint-up(xlarge) {
+            width: 22rem;
+          }
+          .star {
+            margin-top: 0.7rem;
+            .fa-star {
+              color: rgb(214, 214, 3);
+            }
+          }
+        }
+      }
+      .q1 {
+        top: 45rem;
+        left: 37rem;
+      }
+      .q2 {
+        top: 40rem;
+        left: 0rem;
+      }
+      .q5 {
+        top: 30rem;
+        right: 0rem;
+      }
+      .q3 {
+        top: 15rem;
+        left: 5rem;
+      }
+      .q4 {
+        top: 15rem;
+        right: -6rem;
+      }
+    }
+  }
+}

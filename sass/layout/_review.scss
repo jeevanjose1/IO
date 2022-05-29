@@ -1,0 +1,260 @@
+.review {
+  width: 100vw;
+  height: 80rem;
+  .headingsection {
+    width: 100%;
+    text-align: center;
+    .subheading {
+      text-transform: uppercase;
+      font-size: $paragraph;
+      letter-spacing: 2px;
+      color: $d1;
+      margin-bottom: 2rem;
+    }
+    .mainheading {
+      height: 100%;
+      font-size: $subheading;
+      width: 40%;
+      margin: 0 auto;
+    }
+  }
+  .main {
+    width: 100%;
+  }
+  .mainsection {
+    width: 65rem;
+    height: 70%;
+    position: relative;
+    margin: auto;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 29rem;
+      width: 65rem;
+      background-color: $gradient2;
+      background-image: url(/images/CurveLine.svg);
+      background-position: center;
+      z-index: -1;
+      border-radius: 2rem;
+    }
+    .first {
+      flex: 1;
+      height: 100%;
+      position: relative;
+      .card1 {
+        width: 23rem;
+        height: 8.5rem;
+        border-radius: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        top: 8rem;
+        left: -7rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+        padding: 1.5rem;
+        .img {
+          margin-right: 2rem;
+          position: relative;
+          .fa-user-circle {
+            font-size: 4.5rem;
+            color: $btn;
+          }
+          .fa-play {
+            position: absolute;
+            font-size: 0.8rem;
+            background-color: white;
+            width: 1.5rem;
+            height: 1.5rem;
+            border-radius: 50px;
+            right: 0.2rem;
+            padding: 0.6em;
+            color: $d1;
+          }
+        }
+        .detials {
+          margin-right: 2rem;
+          h3 {
+            margin-bottom: 0.4rem;
+          }
+          p {
+            margin-bottom: 0.4rem;
+          }
+          .fa-star {
+            color: rgb(238, 214, 0);
+          }
+        }
+        h2 {
+          font-size: 1rem;
+          align-self: flex-start;
+          color: white;
+          font-weight: 300;
+          text-align: center;
+          background-color: $btn;
+          border-radius: 1rem;
+          width: 3rem;
+          height: 1.5rem;
+        }
+      }
+
+      .card2 {
+        width: 11rem;
+        height: 12rem;
+        padding: 1rem;
+        background-color: white;
+        bottom: 9rem;
+        left: 3rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+
+        border-radius: 1rem;
+        h2 {
+          font-size: 1rem;
+        }
+        .fa-chart-area {
+          font-size: 9rem;
+          color: $d1;
+        }
+      }
+    }
+
+    .second {
+      height: 100%;
+      flex: 1;
+      position: relative;
+      .card3 {
+        width: 23rem;
+        height: 30rem;
+        padding: 2rem;
+        background-color: white;
+        border-radius: 1rem;
+        top: 20rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+
+        .img {
+          text-align: center;
+          h3 {
+            text-align: center;
+            color: #9bde9b;
+            background-color: #eafaea;
+            width: 5rem;
+            border-radius: 1rem;
+            margin-left: 14rem;
+          }
+          .avtr {
+            width: 5rem;
+          }
+        }
+        .heading {
+          text-align: center;
+          font-size: 1.2rem;
+          padding: 1rem;
+        }
+        .rating {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          .star {
+            color: rgb(238, 214, 0);
+          }
+        }
+        .detials {
+          margin-top: 2.5rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .qs {
+            h4 {
+              margin-bottom: 1.5rem;
+            }
+          }
+          .ans {
+            text-align: right;
+            h4 {
+              margin-bottom: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+    .third {
+      height: 100%;
+      flex: 1;
+
+      position: relative;
+      .card4 {
+        height: 18rem;
+        width: 16rem;
+        border-radius: 1rem;
+        background-color: white;
+        padding: 1.5rem;
+        position: relative;
+        top: 14rem;
+        right: -8rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+        .head {
+          display: flex;
+          .eq {
+            height: 8rem;
+            width: 8rem;
+            padding: 1rem;
+            border-radius: 1rem;
+            img {
+              width: 3rem;
+            }
+
+            p {
+              font-size: 0.6rem;
+            }
+            h1 {
+              font-size: 1.6rem;
+            }
+          }
+          .h1 {
+            background-color: $d1;
+            color: white;
+          }
+          .h2 {
+            position: absolute;
+            right: -3rem;
+            background-color: white;
+            box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+          }
+        }
+        h2 {
+          font-size: 1rem;
+          text-align: center;
+          margin-top: 1.5rem;
+        }
+        .img {
+          margin-top: 1rem;
+          img {
+            width: 3rem;
+          }
+        }
+      }
+      .card5 {
+        display: flex;
+        align-items: center;
+        width: 20rem;
+        height: 7rem;
+        padding: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        left: 6rem;
+        bottom: 10rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+        img {
+          width: 4rem;
+          margin-right: 1rem;
+        }
+        h3 {
+          margin-bottom: 0.3rem;
+        }
+        p {
+          margin-bottom: 0.3rem;
+        }
+        .fa-star {
+          color: rgb(238, 214, 0);
+        }
+      }
+    }
+  }
+}

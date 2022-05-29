@@ -1,0 +1,54 @@
+.achivement {
+  padding: 5rem 15rem 15rem 15rem;
+  .mainsection {
+    width: 50rem;
+    margin: auto;
+    .headingsection {
+      margin-bottom: 3rem;
+      h3 {
+        font-size: $paragraph;
+        text-transform: uppercase;
+        color: rgb(90, 132, 172);
+        letter-spacing: 1.5px;
+        margin-bottom: 1rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+    }
+    .sectioncontainer {
+      .box {
+        width: 15rem;
+        height: 15rem;
+        border-radius: 1.5rem;
+        padding: 2rem;
+        &:not(:last-child) {
+          margin-right: 3rem;
+        }
+      }
+      .innerbox {
+        background-color: white;
+        width: 11rem;
+        height: 11rem;
+        border-radius: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+        h2 {
+          margin-bottom: 1rem;
+        }
+      }
+      .box1 {
+        @include gradient1;
+      }
+      .box2 {
+        @include gradient2;
+      }
+      .box3 {
+        @include gradient1;
+      }
+    }
+  }
+}

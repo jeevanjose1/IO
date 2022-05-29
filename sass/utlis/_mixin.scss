@@ -1,0 +1,40 @@
+//640px 1024px 1400px
+$breakpoints-up: (
+  "medium": "40em",
+  "large": "64em",
+  "xlarge": "87.5em",
+);
+
+//639px 1023px 1399px
+$breakpoints-down: (
+  "small": "39.9375em",
+  "medium": "63.9375em",
+  "large": "87.4275em",
+);
+
+@mixin breakpoint-up($size) {
+  @media (min-width: map-get($breakpoints-up, $size)) {
+    @content;
+  }
+}
+@mixin breakpoint-down($size) {
+  @media (min-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+//gradient
+@mixin gradient1 {
+  background: linear-gradient(
+    135deg,
+    rgba(233, 247, 255, 1) 0%,
+    rgba(254, 237, 247, 1) 100%
+  );
+}
+@mixin gradient2 {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 246, 237, 1) 0%,
+    rgba(255, 221, 187, 1) 100%
+  );
+}

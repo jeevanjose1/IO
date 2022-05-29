@@ -1,0 +1,188 @@
+.summary {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .mainsection {
+    background-image: url(/images/CurveLine.svg);
+    background-color: #faeaf6;
+    padding: 5rem;
+    border-radius: 1.5rem;
+    width: 80rem;
+    margin: auto;
+    .detials {
+      width: 40%;
+      padding: 2rem;
+      h1 {
+        font-size: $subheading;
+        margin-bottom: 2rem;
+      }
+      p {
+        font-size: $paragraph;
+        margin-bottom: 2rem;
+        line-height: 1.5;
+      }
+    }
+    .images {
+      width: 50%;
+      height: 35rem;
+      .img {
+        background-color: #fff6ed;
+        width: 100%;
+        height: 100%;
+        padding: 4rem;
+        border-radius: 2rem;
+        margin-top: -12rem;
+        box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+        .graph1 {
+          background-color: white;
+          height: 20rem;
+          border-radius: 1rem;
+          padding: 1rem;
+
+          .head {
+            display: flex;
+
+            .co {
+              width: 50%;
+              padding: 1rem;
+              color: white;
+            }
+            .sec1 {
+              background-color: $btn;
+              border-radius: 0.5rem 0rem 0rem 0.5rem;
+            }
+            .sec2 {
+              background-color: $d1;
+              border-radius: 0rem 0.5rem 0.5rem 0rem;
+            }
+          }
+          .line {
+            display: flex;
+            margin-top: 4rem;
+
+            .numbers {
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              height: 10rem;
+              width: 10%;
+            }
+            .linegraphs {
+              display: flex;
+              justify-content: space-between;
+              width: 90%;
+              align-items: flex-end;
+
+              .l1 {
+                width: 1.5rem;
+                background-color: red;
+                border-radius: 0.3rem 0.3rem 0rem 0rem;
+                &:nth-child(1) {
+                  background-color: #efc32e;
+                  height: 4rem;
+                }
+                &:nth-child(2) {
+                  background-color: #ade8e5;
+                  height: 7rem;
+                }
+                &:nth-child(3) {
+                  background-color: #ade8e5;
+                  height: 3rem;
+                }
+                &:nth-child(4) {
+                  background-color: #efc32e;
+                  height: 9rem;
+                }
+                &:nth-child(5) {
+                  background-color: #ade8e5;
+                  height: 7rem;
+                }
+                &:nth-child(6) {
+                  background-color: #efc32e;
+                  height: 6rem;
+                }
+                &:nth-child(7) {
+                  background-color: #ade8e5;
+                  height: 4rem;
+                }
+                &:nth-child(8) {
+                  background-color: #ade8e5;
+                  height: 5rem;
+                }
+              }
+            }
+          }
+        }
+        .graph2 {
+          width: 20rem;
+          height: 9rem;
+          background-color: white;
+          padding: 2rem;
+          border-radius: 1rem;
+          position: absolute;
+          bottom: 5rem;
+          right: 2rem;
+          box-shadow: 33px 20px 53px -6px rgba(0, 0, 0, 0.14);
+
+          .sec1 {
+            justify-content: space-between;
+            .fa-user-circle {
+              font-size: 2.5rem;
+              color: $btn;
+            }
+            .slide1 {
+              width: 4rem;
+              height: 1rem;
+              background-color: #ade8e5;
+              border-radius: 1rem;
+            }
+            .slide2 {
+              width: 6rem;
+              height: 1rem;
+              background-color: rgb(224, 224, 224);
+              border-radius: 1rem;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 80%;
+                height: 100%;
+                border-radius: 1rem;
+                background-color: $d1;
+              }
+            }
+          }
+          .sec2 {
+            justify-content: space-between;
+            margin-top: 1rem;
+            .fa-user-circle {
+              font-size: 2.5rem;
+              color: $btn;
+            }
+            .slide1 {
+              width: 4rem;
+              height: 1rem;
+              background-color: #ade8e5;
+              border-radius: 1rem;
+            }
+            .slide2 {
+              width: 6rem;
+              height: 1rem;
+              background-color: rgb(224, 224, 224);
+              border-radius: 1rem;
+              position: relative;
+              &::after {
+                content: "";
+                position: absolute;
+                width: 40%;
+                height: 100%;
+                border-radius: 1rem;
+                background-color: $d1;
+              }
+            }
+          }
+        }
+        position: relative;
+      }
+    }
+  }
+}

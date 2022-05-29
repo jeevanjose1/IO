@@ -1,0 +1,86 @@
+.nav {
+  width: 100vw;
+  height: 15rem;
+  justify-content: space-between;
+  .logo-div {
+    .logo1 {
+      width: 7rem;
+    }
+    .logo2 {
+      width: 7rem;
+    }
+  }
+
+  .navm {
+    display: flex;
+    padding: 10%;
+    justify-content: flex-end;
+
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: $secondary;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    position: fixed;
+    opacity: 1;
+    transition: all 0.5s;
+    transition-timing-function: cubic-bezier(0.16, 0.65, 0.51, 0.89);
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      width: 100vw;
+      height: 100%rem;
+      background: none;
+      position: static;
+      z-index: 0;
+      transform: translatex(0rem);
+      padding: 0;
+    }
+    .list {
+      list-style: none;
+      text-align: right;
+      @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .items {
+        margin-bottom: 4rem;
+        @include breakpoint-up(large) {
+          margin-bottom: 0rem;
+        }
+        .link {
+          text-decoration: none;
+          font-size: 4rem;
+          color: $fontcolor;
+          @include breakpoint-up(large) {
+            font-size: $paragraph;
+            padding: 2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.hammenu {
+  cursor: pointer;
+  z-index: 15;
+  position: fixed;
+  right: 0;
+  padding-right: 10%;
+  .ham {
+    width: 3rem;
+    height: 0.2rem;
+    background-color: $d1;
+    padding-top: 0.1rem;
+    margin: 0.7rem;
+
+    @include breakpoint-up(large) {
+      display: none;
+    }
+  }
+}

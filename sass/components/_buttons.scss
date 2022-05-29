@@ -1,0 +1,32 @@
+.btn {
+  padding: 1.5rem 3rem;
+  outline: none;
+  background-color: $btn;
+  border: none;
+  border-radius: 1.7rem;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+.btn1 {
+  background-color: white;
+  color: $fontcolor;
+  margin-right: 2rem;
+}
+.btnplay {
+  border-radius: 50px;
+  padding: 1.5rem 2rem;
+  margin-left: 1rem;
+}
+
+.fa-play {
+  font-size: 1.2rem;
+}
+
+.btndiv {
+  span {
+    font-size: $paragraph;
+    color: $fontcolor;
+    font-weight: 600;
+  }
+}
