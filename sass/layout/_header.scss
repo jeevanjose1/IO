@@ -71,6 +71,7 @@
           width: 8rem;
           transform: scale(0);
           transition: scale 0.2s ease-in;
+          
 
           &:hover {
             transform: scale(1.1);
@@ -119,10 +120,14 @@
           line-height: 1.5;
           pointer-events: none;
           @include breakpoint-up(large) {
-            width: 15rem;
+            width: 10rem;
+            height: 6rem;
+            font-size: 8px;
           }
           @include breakpoint-up(xlarge) {
-            width: 22rem;
+            width: 25rem;
+            font-size: $paragraph;
+            height: 6rem;
           }
           .star {
             margin-top: 0.7rem;
@@ -133,12 +138,12 @@
         }
       }
       .q1 {
-        top: 45rem;
-        left: 37rem;
+        top: 50rem;
+        left: 30rem;
       }
       .q2 {
-        top: 40rem;
-        left: 0rem;
+        top: 30rem;
+            left: 0rem;
       }
       .q5 {
         top: 30rem;

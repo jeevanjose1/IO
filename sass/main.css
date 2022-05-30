@@ -412,13 +412,17 @@ footer .mainsection .head .navigations .nav5 .icons i:not(:last-child) {
 
 @media (min-width: 64em) {
   .header .hero .images .quote blockquote {
-    width: 15rem;
+    width: 10rem;
+    height: 6rem;
+    font-size: 8px;
   }
 }
 
 @media (min-width: 87.5em) {
   .header .hero .images .quote blockquote {
-    width: 22rem;
+    width: 25rem;
+    font-size: 1.2rem;
+    height: 6rem;
   }
 }
 
@@ -431,12 +435,12 @@ footer .mainsection .head .navigations .nav5 .icons i:not(:last-child) {
 }
 
 .header .hero .images .q1 {
-  top: 45rem;
-  left: 37rem;
+  top: 50rem;
+  left: 30rem;
 }
 
 .header .hero .images .q2 {
-  top: 40rem;
+  top: 30rem;
   left: 0rem;
 }
 
